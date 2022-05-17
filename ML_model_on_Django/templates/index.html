@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="jumbotron" >
+        <h3 class="display-5" style="text-align: center;">Glass Classification on the Basis of Chemical Composition</h3>
+       
+      </div>
+    <div class="container" style="display: block;">
+        <form style="margin:2% 1% ;" action=" {% url 'output' %}">
+            {%csrf_token %}
+            <div class="form-group">
+                <label for="formGroupExampleInput">RI</label>
+                <input type="text" class="form-control" required name="RI" id="formGroupExampleInput"
+                    placeholder="Example input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Na</label>
+                <input type="text" class="form-control" required name="Na" id="formGroupExampleInput"
+                    placeholder="Example input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Mg</label>
+                <input type="text" class="form-control" required name="Mg" id="formGroupExampleInput2"
+                    placeholder="Another input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">AI</label>
+                <input type="text" class="form-control" required name="AI" id="formGroupExampleInput2"
+                    placeholder="Another input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Si</label>
+                <input type="text" class="form-control" required name="Si" id="formGroupExampleInput2"
+                    placeholder="Another input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">K</label>
+                <input type="text" class="form-control" required name="K" id="formGroupExampleInput2"
+                    placeholder="Another input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Ca</label>
+                <input type="text" class="form-control" required name="Ca" id="formGroupExampleInput2"
+                    placeholder="Another input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Ba</label>
+                <input type="text" class="form-control" required name="Ba" id="formGroupExampleInput2"
+                    placeholder="Another input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Fe</label>
+                <input type="text" class="form-control" required name="Fe" id="formGroupExampleInput2"
+                    placeholder="Another input">
+            </div>
+            <div class="form-group">
+                <input type="submit" style="margin-top: 3%; margin-left: 4%; " id="formGroupExampleInput2" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
